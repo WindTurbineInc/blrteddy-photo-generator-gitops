@@ -1,0 +1,15 @@
+app:
+  name: blrteddy-photo-generator-app
+  namespace: blrteddy
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/blrteddy-photo-generator
+  org: WindTurbineInc
+  name: blrteddy-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: blrteddy/photo-generator-app
+  tag: latest
